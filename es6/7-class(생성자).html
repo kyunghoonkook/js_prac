@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-class(생성자)</title>
+</head>
+<body>
+    <h1>class</h1>
+    <p>객체지향 프로그래밍에서 특정 객체르 생성하기위해 변수와 메서드를 정의하는 틀을 말한다.</p>
+    <h2>객체 생성방법</h2>
+    <p>리터럴 방식</p>
+    <p>함수 방식</p>
+    <p>프로토 타입 방식</p>
+
+    <h2>1 리터럴 방식</h2>
+    var 오브젝트명(인스턴스) = {
+        속성 변수 : 값, 
+        속성 변수 : 값,
+        메서드:function(){
+
+        },
+        메서드:function(){
+
+        }
+    }
+
+    <h2>함수 방식</h2>
+    function 클래스명(){
+        this.속성변수 = 값;
+        this.속성변수 = 값;
+        this.메서드 = function(){
+
+        }
+        this.메서드 = () => {
+
+        }
+    }
+
+    <h2>프로토 타입 방식</h2>
+    function 클래스명 (){
+        this.속성변수 = 값;
+        this.속성변수 = 값;
+
+    }
+
+    클래스명.prototype.메서드명 = function(){
+
+    }
+    <h2>es6 클래스업</h2>
+    class 클래스명{
+        변수 = 값;
+
+        constructor(오브젝트명 = {},data =[]){
+            this.변수명 = 매개변수1
+        }
+        메서드명(){
+
+        }
+    }
+</body>
+</html>

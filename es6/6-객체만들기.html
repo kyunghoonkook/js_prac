@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-객체만들기</title>
+    <script>
+        var person = {
+            name : "홍길동",
+            age:18,
+            gender:"man",
+            family:{
+                "mom":"ㅎㅎ",
+                "father":"gg"
+            },
+            hobby:["책읽기","영화감상"],
+            comment:function(){
+                console.log("gg")
+            },
+            comment:()=>{
+                console.log("gggggg")
+            }
+        }
+
+        console.log(person.name);
+        console.log(person.family.mom);
+        console.log(person.hobby[1]);
+        person.comment();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-class-extends</title>
+    <script>
+        //동물 클래스
+        class Animal{
+            constructor(uName){
+                this.name = uName;
+            }
+            speak(){
+                console.log(`${this.name} 는 기요워~`);
+            }
+        }
+        //강아지 클래스 동물 클래스가 가지고 있는 내용도 가지면서 새로운 함수를 추가로 갖는다
+        class Dog extends Animal{
+            constructor(uuName){
+                super(uuName);
+            }
+            speak2(){
+                console.log(`는 사랑스러워`)
+            }
+        }
+
+        let myDog = new Dog("백구");
+        myDog.speak();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

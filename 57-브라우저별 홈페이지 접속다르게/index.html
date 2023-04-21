@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //브라우저의 정보를 얻어오기
+        var total = navigator.userAgent.toLowerCase();
+        console.log(total);
+        //윈도우, 안드로이드, 아이폰, 맥 에서 접속했는지를 찾아서
+        //윈도우, 맥에서 접속했으면 pc-index.html를 연결
+        //안드로이드, 아이폰에서 접속했으면 mobile-index.html을 연결
+
+        if (total.indexOf("windows") >= 0 || total.indexOf("macintosh") >= 0) {
+            //pc접속
+            location.href="http://tistest.dothome.co.kr/pc-index.html";
+        }
+        else {
+            //mobile
+            location.href="http://tistest.dothome.co.kr/mobile-index.html";
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-배열 데이터 출력하기</title>
+    <script>
+        var data = [1, 2, "seoul", null, "", 22];
+
+        for (i = 0; i < data.length; i++) {
+            console.log("기존:" + (data[i] + 1))
+        }
+
+        data.forEach(value => console.log(value + 2));
+
+        for (let i in data) {
+            console.log("forin:" + (data[i] + 3))
+        }
+
+        for (let i of data) {
+            console.log(`for of : ${i+5}`)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-digital watch for class</title>
+    <script>
+        class Clock {
+            constructor() {
+
+            }
+            myTimer() {
+                let date = new Date();
+
+                let hours = date.getHours();
+
+                let mins = date.getMinutes();
+
+                let secs = date.getSeconds();
+
+                console.log(`${hours} : ${mins} : ${secs}`)
+            }
+
+            start() {
+                this.myTimer();
+                this.tt = setInterval(() => this.myTimer(), 1000)
+            }
+        }
+        let myClock = new Clock();
+        myClock.start();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

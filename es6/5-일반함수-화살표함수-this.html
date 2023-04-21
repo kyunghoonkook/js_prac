@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-일반함수-화살표함수-this</title>
+    <script>
+        function blackDog1(){
+            this.name = "흰둥이1";
+            return{
+                name:"검둥이1",
+                bark:function(){
+                    console.log(this.name+"~~");
+                }
+            }
+        }
+
+        let black = new blackDog1();
+        black.bark();
+
+        function blackDog2(){
+            this.name = "흰둥이2";
+            return{
+                name:"감둥이2",
+                bark:() => {
+                    console.log(this.name+"gg");
+                }
+            }
+        }
+
+        let black2 = new blackDog2();
+        black2.bark();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
