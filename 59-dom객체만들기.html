@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>59-dom-객체만들기</title>
+    <script>
+        //윈도우안의 모든 내용이 읽혀지면 스크립트를 실행해라
+        window.onload = function () {
+            //태그생성하기
+            var hTitle = document.createElement("h1");
+
+            //위에서 생성된 태그안에 넣을 내용물 생성하기        
+            var hText = document.createTextNode("제목");
+
+            //생성된 태그안에 생성한 내용물 넣기
+            hTitle.appendChild(hText);  //태그생성하기
+        var hTitle = document.createElement("h1");
+
+        //위에서 생성된 태그안에 넣을 내용물 생성하기        
+        var hText = document.createTextNode("제목");
+
+        //생성된 태그안에 생성한 내용물 넣기
+        hTitle.appendChild(hText);
+
+        //body에 hTitle을 넣기 
+        document.body.appendChild(hTitle);
+
+            //body에 hTitle을 넣기 
+            document.body.appendChild(hTitle);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-용돈관리</title>
+    <script>
+        //차비 입력받기
+        var fare = prompt("오늘 사용한 차비를 입력하세요", "");
+        //식비 입력받기
+        var expense = prompt("오늘 사용한 식비를 입력하세요", "");
+        //음료 입력받기
+        var coffee = prompt("오늘 마신 음료비를 입력하세요", "");
+
+        var total = Number(fare) + Number(expense) + Number(coffee);
+        console.log(total);
+
+        total >= 12000 ? 
+        console.log(total - 12000 + "원이 초과되었습니다. 용돈관리가 필요합니다") : console.log("용돈관리를 잘했습니다")
+
+    </script>
+</head>
+
+<body>
+    차비, 식비, 음료비를 입력받아서
+    1.합계 콘솔창에 출력하기
+    2. 합계>=12000 비교하여 크면 "합계-12000을 해서 초과되었습니다. 용돈관리가 필요합니다"
+    초과하지 않았으면 "용돈 관리가 잘 되었습니다."
+</body>
+
+</html>

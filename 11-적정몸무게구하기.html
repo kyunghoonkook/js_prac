@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-적정몸무게 구하기</title>
+    <script>
+        //키 입력받기
+        var height = Number(prompt("당신의 키를 입력하세요",""));
+
+        //몸무게 입력받기
+        var weight = Number(prompt("당신의 몸무게를 입력하세요",""));
+
+        //적정 몸무게 계산 저장할 변수  + - 5
+        var sWeight = (height-100)*0.9;
+        console.log(sWeight);
+
+        sWeight-5 <= weight && weight <= sWeight+5 ? console.log("적정 몸무게입니다") : console.log("노력하세요");
+
+
+
+    </script>
+</head>
+
+<body>
+    <p>적정몸무게 = ( 키-100)*0.9 +5, -5</p>
+    <p>적정몸무게 -5 <= 내가 적정 몸무게의 범위에 속하는지 체크 <=적정몸무게 + 5 </p>
+    <p>키 160 ==> 54</p>
+   <p> 49<= 내 무게 && 내무게 <=59 </p>
+
+</body>
+
+</html>

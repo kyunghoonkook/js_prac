@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-조건문-짝수-홀수구하기</title>
+    <script>
+        var num = Number(prompt("숫자를 입력하세요", ""));
+        var result = num%2;
+        console.log(result);
+        
+        if (result == 0) {
+            console.log("짝수")
+        }
+        else {
+            console.log("홀수");
+        }
+    </script>
+</head>
+
+<body>
+    <p>데이터를 입력받아서 그 숫자가 짝수인지 홀수인지 체크하기</p>
+    <p>데이터를 2로 나누어서 나머지가 0이면 짝수, 그렇지 않으면 홀수</p>
+    <p>나머지 연산자 % </p>
+</body>
+
+</html>

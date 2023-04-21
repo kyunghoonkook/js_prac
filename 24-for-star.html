@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-for-star</title>
+    <script>
+        //줄
+        for(i=1;i<=10;i++){
+            //별
+            for(j=1;j<=i;j++){
+                document.write("☆");
+            }
+            document.write("<br>");
+        }
+
+        //하트 
+        var heart = ""; 
+               for(k=1;k<=10;k++){
+            heart +="♡";
+            document.write(`${heart} <br>`);
+        }
+
+        //문자열 객체 repeat
+        var star="★";
+        for(var i=1;i<=10;i++){
+            document.write(star.repeat(i)+"<br>");
+        }
+        document.write(typeof(star));
+        
+        var num=1;
+        document.write(typeof(num));
+
+
+    </script>
+</head>
+<body>
+    <a href="#"  onclick="window.close();">닫기</a>
+</body>
+</html>
